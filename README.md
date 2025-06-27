@@ -24,10 +24,10 @@ JAVALA adalah aplikasi web edukatif yang bertujuan melestarikan cerita rakyat In
 - Gradio UI (opsional untuk integrasi demo AI)
 
 ### Backend (NLP & TTS)
-- Python + FastAPI
-- Translasi Bahasa Indonesia → Bahasa Jawa menggunakan model fine-tuned MarianMT atau IndoNLG.
-- TTS Bahasa Jawa menggunakan model Facebook `facebook/mms-tts-ind` atau `Coqui TTS` fine-tuned untuk Bahasa Jawa.
-- Hugging Face Transformers, Coqui TTS, Torch
+- Python 
+- Translasi Bahasa Indonesia → Bahasa Jawa menggunakan model fine-tuned Cendol.
+- TTS Bahasa Jawa menggunakan model Facebook `facebook/mms-tts-ind` fine-tuned untuk Bahasa Jawa.
+- Hugging Face Transformers, Torch
 
 ---
 
@@ -45,11 +45,16 @@ eas-javala/
 │
 ├── backend/
 │   ├── app.py               # API server 
-│   ├── translator.py        # Modul translasi Indo → Jawa
-│   ├── tts\_engine.py        # Modul TTS Bahasa Jawa
-│   ├── models/
-│   │   ├── tts\_model/       # Model TTS (jika lokal)
-│   │   └── translator/      # Model translasi (jika lokal)
+│   ├── backend.py
+│   ├── best_model_mt5/
+│   │   ├── adapter_config.json       
+│   │   └── adapter_model.safetensors
+│   │   └── special_tokens_map.json
+│   │   └── spiece.model
+│   │   └── tokenizer_config.json
+│   │   └── training_args.bin
+|   ├── best_model_mt5/
+│   │   └── Dataset_cerita_rakyat.csv
 │   └── requirements.txt     # Dependency Python
 │
 └── README.md
