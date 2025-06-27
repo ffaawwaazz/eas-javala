@@ -44,7 +44,7 @@ eas-javala/
 │   └── script.js
 │
 ├── backend/
-│   ├── app.py               # API server FastAPI
+│   ├── app.py               # API server 
 │   ├── translator.py        # Modul translasi Indo → Jawa
 │   ├── tts\_engine.py        # Modul TTS Bahasa Jawa
 │   ├── models/
