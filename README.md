@@ -1,5 +1,6 @@
 # eas-javala
 
+LINK WEB : https://naufalhumam24.github.io/eas-javala/
 
 # JAVALA — Pelestarian Cerita Rakyat Nusantara melalui Translasi dan TTS Bahasa Jawa
 
